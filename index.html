@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/113.png" type="image/x-icon" />
+    <title>Weather-app</title>
+    <!-- ========== Start Google-Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Rubik+Wet+Paint&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ========== End Google-Fonts ========== -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/stylee.css" />
+  </head>
+  <body>
+    <div class="header d-flex align-items-center">
+      <div class="d-flex align-items-center">
+        <img
+          class="logo-image p-1"
+          src="./images/logo@2x.png"
+          alt="logo-image"
+        />
+        <div class="div-caption ms-2">
+          <h6 class="py-1 m-0">Weather</h6>
+          <p>tagline goes here</p>
+        </div>
+      </div>
+      <div class="input-and-btns">
+        <input type="text" name="" id="input" placeholder="Enter city name" />
+        <button class="btn btn-primary" type="button" id="search">
+          Search
+        </button>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="weather">
+        <h2 class="city" id="country">Cairo</h2>
+        <div class="temp-box">
+          <img id="imageDegree" alt="" id="img" />
+          <p id="temperature">26°C</p>
+        </div>
+        <p id="clouds">BrokenClouds</p>
+      </div>
+      <div class="divider1"></div>
+      <div class="forecstH">
+        <p class="date">
+          <span id="day">Sun</span> <span id="dayNumber"> 03</span>
+          <span id="month">Jul </span>
+        </p>
+        <div
+          class="footer d-flex align-items-start justify-content-between flex-column"
+        >
+          <div class="d-flex align-items-center">
+            <img src="./images/icon-umberella@2x.png" alt="umberella-icons" />
+            <p id="persantage" class="p-0 m-0">20%</p>
+          </div>
+          <div class="d-flex align-items-center py-3">
+            <img src="./images/icon-wind@2x.png" alt="umberella-icons" />
+            <p id="spead" class="p-0 m-0">18km/h</p>
+          </div>
+          <div class="d-flex align-items-center">
+            <img src="./images/icon-compass@2x.png" alt="umberella-icons" />
+            <p id="widDir" class="p-0 m-0">East</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="forecstD">
+      <div class="divider2 my-5"></div>
+      <div class="d-flex align-items-center justify-content-between">
+        <p class="cast-header my-4">Next 3 days forecast</p>
+      </div>
+      <div class="weekF">
+        <div class="dayF text-center">
+          <p class="date">
+            <span id="nextDay"></span> <span id="daysNumber2"></span>
+            <span id="month"></span>
+          </p>
+          <div
+            class="d-flex align-items-center justify-content-center text-center"
+          >
+            <p id="netDayDegreeMax">31°C</p>
+            <p class="mx-2">\</p>
+            <p id="netDayDegreeMin">31°C</p>
+          </div>
+          <img
+            id="netDayImg"
+            class="d-block m-auto"
+            src="./images/113.png"
+            alt="image-weather"
+          />
+          <p class="desc" id="netDayType">Overcast Clouds</p>
+        </div>
+        <div class="dayF text-center">
+          <p class="date">
+            <span id="nextNextDay"></span> <span id="daysNumber3"></span>
+            <span id="month"></span>
+          </p>
+          <div
+            class="d-flex align-items-center justify-content-center text-center"
+          >
+            <p id="netDayDegreeMax2">31°C</p>
+            <p class="mx-2">\</p>
+            <p id="netDayDegreeMin2">31°C</p>
+          </div>
+          <img
+            id="netDayImg2"
+            class="d-block m-auto"
+            src="./images/113.png"
+            alt="image-weather"
+          />
+          <p class="desc" id="netDayType2">Overcast Clouds</p>
+        </div>
+        <div class="dayF text-center">
+          <p class="date">
+            <span id="next3Day"></span><span id="daysNumber4"></span><span id="month"></span>
+          </p>
+          <div
+            class="d-flex align-items-center justify-content-center text-center"
+          >
+            <p id="netDayDegreeMax3">31°C</p>
+            <p class="mx-2">\</p>
+            <p id="netDayDegreeMin3">31°C</p>
+          </div>
+          <img
+            id="netDayImg3"
+            class="d-block m-auto"
+            src="./images/113.png"
+            alt="image-weather"
+          />
+          <p class="desc" id="netDayType3">Overcast Clouds</p>
+        </div>
+      </div>
+    </div>
+    <section>
+      <div class="loading-page" id="loading-page"></div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
